@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f0f2f5;;
+}
+/* common */
+a{
+    text-decoration: none;
+}
+
+.content{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .container .left {
+    text-align: left;
+    padding-right: 100px;
+}
+.content .container .left img{
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    width: 240px;
+    cursor: pointer;
+}
+.content .container .left p{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-left: 18px;
+    line-height: 1.4;
+}
+.content .container .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .container .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
+    padding: 18px 14px 14px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+} 
+.content .container .top form{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    padding-bottom: 18px;
+}
+.button{
+    padding-bottom: 15px;
+}
+.content .container .top form .email{
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    line-height: 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+}
+.content .container .top form .password{
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    line-height: 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+}
+.content .container .top form .login-btn{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.down{
+    display: flex;
+    justify-content: center;
+}
+.form-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body > .content > .container > .right > .top > .form-links > a:nth-child(1){
+    padding-bottom: 13px;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+.space{
+    width: 100%;
+    height: 1px;
+    color: #96999e;   
+    margin: 19px;
+}
+body > .content > .container > .right > .top > .form-links > a:nth-child(3){
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    color: #fff;
+    font-weight: bold;
+    width: 185px;
+}
+body > div > div > div.right > div.down{
+    line-height: 1.8;
+    padding-top: 20px;
+}
+body > div > div > div.right > div.down  a{
+    font-weight: 600;
+    margin-right: 2px;
+    color: #222;
+}
+@media screen and (min-width:425px) and (max-width:768px) {
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .content .container .left {
+        text-align: center;
+        padding-right: 0 ;
+        padding-bottom: 26px;
+    }
+    .space{
+        margin: 11px;
+    }
+    .content .container .left img{
+        line-height: 1.2;
+        width: 212px;
+    }
+    .content .container .left p{
+        font-size: 1.65rem;
+        line-height: 1.2;
+    }
+    .content .container .top form .email{
+        font-size: 16px;
+        padding: 13px 16px;
+        width: 297px;
+    }
+    .content .container .top form .password{
+        font-size: 16px;
+        padding: 13px 16px;
+        width: 297px;
+    }
+    .content .container .top form .login-btn{
+        font-size: 18px;
+        line-height: 44px;
+        width: 297px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(1){
+        font-size: 12px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(3){
+        font-size: 15px;
+        line-height: 44px;
+        padding: 0 16px;
+        width: 173px;
+    }
+    body > div > div > div.right > div.down{
+        line-height: 1;
+        padding-top: 14px;
+    }
+    body > div > div > div.right > div.down  a{
+        font-weight: 600;
+        margin-right: 2px;
+        color: #222;
+    }
+}
+@media screen and (min-width:376px) and (max-width:426px){
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .content .container .left {
+        text-align: center;
+        padding-right: 0 ;
+        padding-bottom: 26px;
+    }
+    .space{
+        margin: 3px;
+    }
+    .content .container .left img{
+        line-height: 1;
+        width: 189px;
+    }
+    .content .container .left p{
+        font-size: 1.48rem;
+        line-height: 1.2;
+        padding: 0 64px 11px;
+    }
+    .content .container .top form .email{
+        font-size: 13px;
+        padding: 13px 16px;
+        width: 271px;
+    }
+    .content .container .top form .password{
+        font-size: 13px;
+        padding: 13px 16px;
+        width: 271px;
+    }
+    .content .container .top form .login-btn{
+        font-size: 16px;
+        line-height: 44px;
+        width: 271px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(1){
+        font-size: 12px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(3){
+        font-size: 14px;
+        line-height: 42px;
+        padding: 0 16px;
+        width: 167px;
+    }
+    body > div > div > div.right > div.down{
+        line-height: 1;
+        padding-top: 14px;
+    }
+    body > div > div > div.right > div.down  a{
+        font-weight: 600;
+        margin-right: 2px;
+        color: #222;
+    }
+}
+@media screen and (min-width:320px) and (max-width:376px){
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .content .container .left {
+        text-align: center;
+        padding-right: 0 ;
+        padding-bottom: 7px;
+    }
+    .space{
+        margin: 3px;
+    }
+    .content .container .left img{
+        line-height: 1;
+        width: 189px;
+    }
+    .content .container .left p{
+        font-size: 1.38rem;
+        line-height: 1.2;
+        padding: 0 48px 11px;
+    }
+    .content .container .top form .email{
+        font-size: 13px;
+        padding: 13px 16px;
+        width: 271px;
+    }
+    .content .container .top form .password{
+        font-size: 13px;
+        padding: 13px 16px;
+        width: 271px;
+    }
+    .content .container .top form .login-btn{
+        font-size: 16px;
+        line-height: 44px;
+        width: 271px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(1){
+        font-size: 12px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(3){
+        font-size: 14px;
+        line-height: 42px;
+        padding: 0 16px;
+        width: 167px;
+    }
+    body > div > div > div.right > div.down{
+        line-height: 1;
+        padding-top: 14px;
+        font-size: 13px;
+    }
+    body > div > div > div.right > div.down  a{
+        font-weight: 600;
+        margin-right: 2px;
+        color: #222;
+    }
+}
+@media screen and (max-width:320px){
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .content .container .left {
+        text-align: center;
+        padding-right: 0 ;
+        padding-bottom: 17px;
+    }
+    .space{
+        margin: 3px;
+    }
+    .content .container .left img{
+        padding-left: 10px;
+        line-height: 1;
+        width: 144px;
+    }
+    .content .container .left p{
+        font-size: 1.1rem;
+        line-height: 1.1;
+        padding: 0 47px 3px;
+    }
+    .content .container .top form .email{
+        font-size: 11px;
+        padding: 13px 16px;
+        width: 237px;
+    }
+    .content .container .top form .password{
+        font-size: 11px;
+        padding: 13px 16px;
+        width: 237px;
+    }
+    .content .container .top form .login-btn{
+        font-size: 14px;
+        line-height: 40px;
+        width: 237px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(1){
+        font-size: 12px;
+    }
+    body > .content > .container > .right > .top > .form-links > a:nth-child(3){
+        font-size: 12px;
+        line-height: 38px;
+        padding: 0 16px;
+        width: 154px;
+    }
+    body > div > div > div.right > div.down{
+        line-height: 1;
+        padding-top: 14px;
+        font-size: 11px;
+    }
+    body > div > div > div.right > div.down  a{
+        font-weight: 600;
+        margin-right: 2px;
+        color: #222;
+    }
+}
